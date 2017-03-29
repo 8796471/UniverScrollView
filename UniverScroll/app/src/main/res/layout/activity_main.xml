@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.myapplication.UniversalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/rv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="滑动到顶部悬浮"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:background="@color/colorPrimaryDark"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:background="#aaa"/>
+
+            </LinearLayout>
+
+
+        </com.myapplication.UniversalScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="滑动到顶部悬浮"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"/>
+</FrameLayout>
